@@ -6,8 +6,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
     <title>Zhao Wei Tech Portfolio: Projects</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -24,14 +22,14 @@
       rel="stylesheet"
     />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="../../css/styles.css" rel="stylesheet" />
   </head>
   <body class="d-flex flex-column h-100 bg-light">
     <main class="flex-shrink-0">
       <!-- Navigation-->
       <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
         <div class="container px-5">
-          <a class="navbar-brand" href="index.html"
+          <a class="navbar-brand" href="../../index.html"
             ><span class="fw-bolder text-primary"
               >Zhao Wei Tech Portfolio</span
             ></a
@@ -50,10 +48,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="../../index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="projects.html">Projects</a>
+                <a class="nav-link" href="../../projects.html">Projects</a>
               </li>
             </ul>
           </div>
@@ -61,7 +59,7 @@
       </nav>
       <p>
         <h1>CS50 Final Project: KopiGO!</h1>
-         KopiGO! is a lightweight web-app order management platform for mobile F&B operations, specifically for mobile coffee carts.
+         <p>KopiGO! is a lightweight web-app order management platform for mobile F&B operations, specifically for mobile coffee carts.</p>
 
         <h2>Why?</h2>
         <p>I had an interest in running a mobile coffee cart for events, and I wondered how I would manage customers' orders without a proper POS station setup unlike a brick and mortar cafe. Generally, the practice is to rely on memory to remember what each customer ordered and that they would stay in line at the waiting area.</p>
@@ -73,7 +71,17 @@
         <p> The web-app can also publish the day's sales record at the end of the shift, exporting into a csv. Past historical records can also be referenced through the app itself.</p>
 
         <h2>Implementation</h2>
-        <p>The app primarily makes use of Python for coding the backend and the Flask framework to serve out the webpages. SQL is used for managing the orders, </p>
+        <p>The app primarily makes use of Python for coding the backend and the Flask framework to serve out the webpages. A database is used to manage orders, making use of SQL to insert new order entries, update orders entries once they are completed and removing wrong entries (if they exist). Each order item in the menu is represented as a Python object, having attributes that describe each order (price, customisation etc.) and its own methods for each item's distinct modification options.</p>
+        <p>I decided to implement OOP in this way so it would be easy to initialise each order item with customer name's and customisation options, autopopulate each order item's customisation options based on its own available methods, and subsequently customise the order by calling its own methods.</p>
+        
+        <h2>Demo Screenshots</h2>
+        <img src="assets/place_order.png" width=75%>
+        <img src="assets/cancel_order.png" width=75%>
+        <img src="assets/fulfill_order.png" width=75%>
+        <img src="assets/current_shift_record.png" width=75%>
+        <img src="assets/historical_record.png" width=75%>
+        
+        <h2>Demo Video</h2>
       </p>
     </main>
     <!-- Footer-->
