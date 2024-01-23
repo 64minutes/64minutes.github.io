@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Zhao Wei Tech Portfolio: Projects</title>
+    <title>Zhao Wei's Tech Portfolio: Projects</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Custom Google font-->
@@ -31,7 +31,7 @@
         <div class="container px-5">
           <a class="navbar-brand" href="../../index.html"
             ><span class="fw-bolder text-primary"
-              >Zhao Wei Tech Portfolio</span
+              >Zhao Wei's Tech Portfolio</span
             ></a
           >
           <button
@@ -72,16 +72,25 @@
 
         <h2>Implementation</h2>
         <p>The app primarily makes use of Python for coding the backend and the Flask framework to serve out the webpages. A database is used to manage orders, making use of SQL to insert new order entries, update orders entries once they are completed and removing wrong entries (if they exist). Each order item in the menu is represented as a Python object, having attributes that describe each order (price, customisation etc.) and its own methods for each item's distinct modification options.</p>
-        <p>I decided to implement OOP in this way so it would be easy to initialise each order item with customer name's and customisation options, autopopulate each order item's customisation options based on its own available methods, and subsequently customise the order by calling its own methods.</p>
+        <p>Modelling each drink item and its customisation options as Python objects allowed for scalability and adapting the system for different F&B setups; adding or removing menu items/customisation options can be easily accomplished, not just on the backend with Python, but with Jinja autopopulating the menu items and options on the front webpage.</p>
+          
+        <p>Beacuse each drink is a Python object, each order can be easily initialised with the customer name's and modified with the customer's preferences by calling the object's own methods.</p>
         
         <h2>Demo Screenshots</h2>
         <img src="assets/place_order.png" width=75%>
+        <p>Creating an order.</p>
         <img src="assets/cancel_order.png" width=75%>
+        <p>Cancelling an order.</p>
         <img src="assets/fulfill_order.png" width=75%>
+        <p>Fulfilling an order.</p>
         <img src="assets/current_shift_record.png" width=75%>
+        <p>Sales tab displays the day's orders, both pending and fulfilled orders.</p>
         <img src="assets/historical_record.png" width=75%>
-        
+        <p>Historical tab reveals all past sales records.</p>
+
         <h2>Demo Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PfNAF0QfkMc?si=tS27RI-lc9Xly-pz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p>Video explaining the project with live-demostration. Voiced over with robot text-to-speech as I was due to submit the project but was still recovering from a long persistant covid cough.</p>
       </p>
     </main>
     <!-- Footer-->

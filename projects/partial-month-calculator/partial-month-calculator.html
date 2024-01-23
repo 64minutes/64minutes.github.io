@@ -1,1 +1,128 @@
-...
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Zhao Wei's Tech Portfolio: Projects</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../../css/styles.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column h-100 bg-light">
+    <main class="flex-shrink-0">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container px-5">
+          <a class="navbar-brand" href="../../index.html"
+            ><span class="fw-bolder text-primary"
+              >Zhao Wei's Tech Portfolio</span
+            ></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+              <li class="nav-item">
+                <a class="nav-link" href="../../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../projects.html">Projects</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <p></p>
+      <h1>Personal Project: Partial Month Calculator</h1>
+      <p>
+        A simple calculator with a user-friendly UI to calculate partial months.
+      </p>
+
+      <h2>Why?</h2>
+      <p>
+        In my previous role where I was involved in tenancy management, it was
+        vital to calculate the number of partial months (number of days in the
+        month / total number of days in the month) precisely to be able to
+        pro-rate tenancy contract dates in months correctly for billing purposes
+        to make the customer does not overpay (or conversely underpay). For
+        example the period 23 Jan 2024 to 9 July 2025 should equate to (9/31 +
+        17 + 9/31) months.
+      </p>
+
+      <p>
+        The team used to rely on manual calculations (i.e. counting) which was
+        prone to human error.
+      </p>
+
+      <p>
+        As I started to pick up coding with Python, I figured why not try to
+        solve this problem and reinforced what I learnt with my new found
+        programming skills?
+      </p>
+
+      <h2>Objectives</h2>
+      <p>
+        The program would serve to give the breakdown of user-given dates (i.e.
+        start date and end date), providing the user:
+      </p>
+
+      <ol>
+        <li>
+          Number of years, months and dates between the start date and end date
+          and;
+        </li>
+        <li>Number of partial months between the start date and end date.</li>
+      </ol>
+
+      <h2>Implementation</h2>
+      <p>
+        The program makes use of the datetime, dateutil and calendar module for
+        Python to achieve the date calculations needed. Tkinter is used to
+        create a GUI for a better user experience. Pyperclip is used to enable
+        copying of the calculation to the clipboard for a better user experience
+        as well.
+      </p>
+
+      <h2>Demo Screenshots</h2>
+      <img src="assets/partial-month-calculator.png" width="75%" />
+      <p>Calculating partial months between 23 Jan 2024 to 9 Jul 2025.</p>
+    </main>
+    <!-- Footer-->
+    <footer class="bg-white py-4 mt-auto">
+      <div class="container px-5">
+        <div
+          class="row align-items-center justify-content-between flex-column flex-sm-row"
+        ></div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
